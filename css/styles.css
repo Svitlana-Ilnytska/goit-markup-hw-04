@@ -156,7 +156,13 @@ p {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../images/hero.jpg);
+}
+
+.overlay {
+  background-image: url('../images/hero.jpg');
+  /* background-image: linear-gradient(rgba(47, 48, 58, 0.4)); */
+ 
+  
   background-position: center;
   background-size: cover;
 }
@@ -362,6 +368,12 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+
+
+.section-clients{
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* section portfolio */
