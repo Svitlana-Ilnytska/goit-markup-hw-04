@@ -124,7 +124,6 @@ p {
   display: flex;
   align-items: center;
   white-space: nowrap;
-  /* justify-content: space-between; */
 }
 
 .site-nav .communication a {
@@ -149,6 +148,12 @@ p {
 
 .site-nav .contact-icon {
   fill: currentColor;
+  margin-right: 10px;
+}
+
+.site-nav .communication a {
+  display: flex;
+  align-items: center;
 }
 
 /* hero */
@@ -230,6 +235,8 @@ p {
 .button-list:focus {
   color: var(--hero-text-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-portfolio {
@@ -246,14 +253,9 @@ p {
   margin-right: 8px;
 }
 
-/* .button-portfolio .button-list + .button-list {
-    margin-right: 8px;
-} */
-
 /* section */
 
 .section {
-  /* background-color: var(--hero-text-color); */
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -377,11 +379,13 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  fill: currentColor;
 }
 
 .section-clients {
   padding-top: 94px;
   padding-bottom: 94px;
+  fill: currentColor;
 }
 
 .technical-icon {
@@ -478,10 +482,6 @@ p {
 /* section portfolio */
 
 .section .list-works {
-  /* margin-top: 20px;
-    margin-right: 24px;
-    margin-bottom: 4px;
-    margin-left: 24px; */
   color: var(--healines-text-color);
   font-weight: bold;
   font-size: 18px;
@@ -489,10 +489,6 @@ p {
 }
 
 .section .features {
-  /* margin-top: -4px;
-    margin-right:24px;
-    margin-bottom: 20px;
-    margin-left: 24px; */
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.87;
@@ -539,7 +535,8 @@ p {
 .separate-feature:hover,
 .separate-feature:focus {
   border: 1px solid var(--solid-portfolio-cards-color);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .separate-feature .card-desc {
@@ -581,7 +578,7 @@ p {
 }
 
 .promotion {
-  display: block;
+  display: inline-block;
   color: var(--hero-text-color);
   font-weight: bold;
   font-size: 14px;
@@ -602,18 +599,17 @@ p {
 .address-item {
   display: flex;
   flex-direction: column;
+  margin-right: 70px;
 }
 
 .promotion-item {
   display: flex;
   flex-direction: column;
+  fill: currentColor;
 }
 
-/* .information-contact {
+.information-contact {
   display: flex;
-  
   flex-wrap: wrap;
-  flex-direction: column;
-  
-  justify-content: space-between;
-} */
+  align-items: center;
+}
