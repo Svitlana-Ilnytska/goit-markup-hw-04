@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  background-color: var(--primary-background-color);
+  background-color: var(--hero-text-color);
   color: var(--title-text-color);
   font-family: Roboto, sans-serif;
   margin: 0;
@@ -131,6 +131,9 @@ p {
   display: block;
   margin-right: 30px;
   text-decoration: none;
+  font-weight: 500;
+  line-height: 1.14;
+
 }
 
 .site-nav .communication:last-child a {
@@ -398,7 +401,6 @@ p {
   background-color: var(--background-button-color);
   margin-bottom: 30px;
   border-radius: 4px;
-  padding: 20px 36px;
 }
 
 .list-icons {
@@ -415,7 +417,16 @@ p {
   align-items: center;
   border-radius: 50%;
   fill: var(--color-social-networks);
+  margin-right: 10px;
 }
+
+/* .networks:last-child {
+margin-right: 0;
+} */
+
+/* .networks:not(:last-child) {
+  margin-right: 10px;
+} */
 
 .networks-footer {
   width: 44px;
@@ -431,7 +442,9 @@ p {
 .communication-icon {
   width: 20px;
   height: 20px;
+
 }
+
 
 .networks:hover,
 .networks:focus,
@@ -609,5 +622,5 @@ p {
 .information-contact {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: baseline;
 }
